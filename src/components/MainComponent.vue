@@ -1,12 +1,16 @@
 <template>
-    <div class="container">
-        
-    </div>
+    <main>
+       <CardList />
+    </main>
 </template>
 
 <script>
+import CardList from './CardList.vue';
     export default {
-        name: "MainComponent"
+        name: "MainComponent",
+        components: {
+            CardList
+        }
     }
 </script>
 

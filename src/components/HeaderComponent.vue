@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-white p-2">
         <h1>Yu-Gi-Oh!</h1>
     </div>
 </template>

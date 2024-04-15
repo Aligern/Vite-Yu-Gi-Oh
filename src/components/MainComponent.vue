@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="container bg-white my-5 ">
        <CardList />
     </main>
 </template>
@@ -15,5 +15,10 @@ import CardList from './CardList.vue';
 </script>
 
 <style lang="scss" scoped>
+@use './src/assets/styles/partials/variables' as *;
+
+main{
+    background-color: $backgroundColor;    
+}
 
 </style>

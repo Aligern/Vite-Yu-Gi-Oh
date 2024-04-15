@@ -1,3 +1,7 @@
 @use './styles/partials/variables' as *;
 
 @import 'bootstrap/scss/bootstrap';
+
+body {
+    background-color: $backgroundColor;
+}

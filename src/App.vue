@@ -24,16 +24,18 @@ import MainComponent from './components/MainComponent.vue';
     methods: {
       setParams(){
         if (this.store.statusFilter) {
-          this.store.options.params.archetypes = this.store.statusFilter;
+          this.store.options.params.archetype = this.store.statusFilter;
           console.log(this.store.options)
           console.log(this.store.statusFilter)
         } else {
-          delete this.store.options.params.archetypes
+          delete this.store.options.params.archetype
         }
         this.getCards();
       },
         getCards(){
+          console.log(this.store.apiUrl + this.store.endpoints.cardInfo, this.store.options);
           axios.get(this.store.apiUrl + this.store.endpoints.cardInfo, this.store.options).then((res) => {
+           
           this.store.cards = res.data.data.map((card) => {
             return {
               id: card.id,
@@ -41,6 +43,7 @@ import MainComponent from './components/MainComponent.vue';
             image: card.card_images[0].image_url,
             status: card.archetype
             }
+            
           });
           //console.log(this.store.cards);
       }).catch((error) => {

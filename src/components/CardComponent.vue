@@ -5,7 +5,7 @@
     <h5 class="card-title text-center py-4">
         {{ name }}
     </h5>
-    <p class="card-text text-center text-black">
+    <p class="card-text text-center text-black fw-bolder">
         {{ type }}
     </p>
   </div>

@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 g-3  " v-for="card in store.cards" :key="card.id">
+            <div class="col-12 col-md-4 col-lg-3 g-3" v-for="card in store.cards" :key="card.id">
                 <CardComponent 
                 :img="card.card_images[0].image_url" :name="card.name" :type="card.archetype" />
             </div>

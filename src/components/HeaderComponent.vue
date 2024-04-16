@@ -5,7 +5,8 @@
             <option value="">
                 All
             </option>
-            <option value="" v-for="archetypes in store.archetypes">{{ 
+            <option :value="archetypes.archetype_name" v-for="archetypes in store.archetypes">
+            {{ 
                 archetypes.archetype_name
              }}
             </option>

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 col-md-4 col-lg-3 g-3" v-for="card in store.cards" :key="card.id">
                 <CardComponent 
-                :img="card.card_images[0].image_url" :name="card.name" :type="card.archetype" />
+                :img="card.image" :name="card.title" :type="card.status" />
             </div>
         </div>
     </div>
